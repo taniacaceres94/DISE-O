@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+ 
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title></title>
+	<script>
+	$(document).ready(function(){
+	  $("#btnOcultar").click(function(){
+		$("#img1").fadeOut();
+		$("#img1").fadeOut("slow");
+		$("#img1").fadeOut(3000);
+	  });
+	  $("#btnMostrar").click(function(){
+		$("#img1").fadeIn();
+		$("#img1").fadeIn("slow");
+		$("#img1").fadeIn(3000);
+	  });
+	  
+	  $("#btnTodo").click(function(){
+		
+		$("#img1").fadeToggle("slow");
+	  });
+	  
+	  
+	});
+	</script>
+    
+    
+    
+  </head>
+  <body>
+    <h1>Prueba 1</h1>
+	 <button id="btnOcultar" class="btn bg-primary">Ocultar</button>&nbsp;
+	 <button id="btnMostrar" class="btn bg-info">Mostrar</button>&nbsp;
+     <button id="btnTodo" class="btn bg-warning">Todo</button>&nbsp;
+	<div id="img1">
+	<img  src="imagen1.jpg" >
+	</div>
+    <!-- Optional JavaScript -->
+     </body>
+</html>

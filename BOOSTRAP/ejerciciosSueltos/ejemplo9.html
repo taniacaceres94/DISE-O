@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="C:\Users\tania\Desktop\CLASE\DISEÑO\2 EVALUACIÓN\bootstrap-4.4.1-dist/css/bootstrap.css">
+
+       <!-- Optional JavaScript -->
+       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+       <!--<script src="C:\Users\tania\Desktop\CLASE\DISEÑO\2 EVALUACIÓN\bootstrap-4.4.1-dist\js\boostrap.min.js" ></script>-->
+  
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>MENU DE NAVEGACIÓN</h1>
+    <div class="container">
+        <p class="text-center">Menú de navegación</p>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace 4</a>
+            </li>
+        </ul>
+<br><br>
+        <p class="text-center">Menú pestañas justificado:</p>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Enlace 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace 4</a>
+            </li>
+        </ul>
+        <br>
+        <p class="text-center">Menú pastillas:</p>
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Enlace 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Enlace 4</a>
+            </li>
+        </ul>
+        <br>
+
+        <p class="text-center">Menú con desplegable</p>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Enlace 1</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Enlace 2</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Enlace x</a>
+                    <a class="dropdown-item" href="#">Enlace x</a>
+                    <a class="dropdown-item" href="#">Enlace x</a>
+                </div>
+            </li>
+        </ul>
+
+        <br>
+
+        <p class="text-center">Pestañas:</p>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#menu1">Menú 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2">Menú 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu3">Menú 3</a>
+            </li>
+        </ul>
+        <!--Paneles tab-->
+        <div class="tab-content">
+            <div class="tab-pane active container bg-warning" id="menu1">HOLA</div>
+            <div class="tab-pane  container bg-primary" id="menu2">MENU2</div>
+            <div class="tab-pane  container bg-success" id="menu3">ADIOS</div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+
+
+.principal {
+    padding: 0;
+    position: relative;
+}
+
+
+
+.principal img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+
+}
+
+.body1 {
+    height: 400px;
+
+}
+
+.info1 {
+    margin: 0px;
+    width: 400px;
+    height: 400px;
+    position: relative;
+   /* justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;*/
+
+
+}
+
+.info1 h1 {
+    margin: 20px;
+    font-size: 2vw;
+
+}
+
+/*.contenido {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}*/
+
+.info1 p {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*CARROUSEL PAGINA-------*/
+.carrouselPagina{
+    background-color: #1D1D1D;
+    color: white;
+    height: auto;
+}
+
+/*.contenido2 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}*/
+.contenidoCarrousel {
+    padding: 0;
+}
+
+.textoCarrousel {
+    padding: 50px;
+}
+
+
+/*.contenido2 div {
+    width: 100%;
+}*/
+/*.info2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}*/
+
+.info2 img {
+    width: 100%;
+}
+
+.info2 p , h1, button{
+    text-align: justify;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+/*.contenidoCajasPie { /*ver si puedo ponerlo con boostrap*/
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+/*Contenido del mail*/
+.moreInfo {
+    width: 450px;
+    height: 350px;
+}
+
+.moreInfo div {
+    padding: 15px;
+    
+}
+
+/*Pie de página*/
+
+
+
+/*.tituloContenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.tituloContenido h2 {
+    margin: 50px;
+}
+
+.cuadritos {
+    margin-bottom: 70px;
+
+}
+
+.icono {
+    font-size: 100px;
+    color: #302f2e;
+}
+
+.titulo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
+    color: white;
+}
+
+/*redimensiona el tamaño del texto segun un porcentaje respecto al tamaño de la pagina, pj 10vw es el 10% de lo que
+mida la ventana en ese momento*/
+.titulo h1 {
+    font-size: 6vw;
+    margin: 10px;
+}
+
+.titulo p {
+    font-size: 2vw;
+    margin: 10px;
+}
+
+.buscador {
+    font-size: 2vw;
+    margin: 10px;
+}
+
+.buscador div {
+    font-size: 2vw;
+}
+
+.buscador a {
+    font-size: 1vw;
+}
+
+
+
+.linea {
+    width: 5px;
+    height: 400px;
+    background-color: #302f2ea6;
+}
+
+/*.info1linea {
+    padding: 0;
+
+    /*background-color: chartreuse;*/
+    /*display: flex;
+    justify-content: center;
+}*/
+
+.piePagina {
+    background-color: #1D1D1D;
+    color: white;
+    padding-top: 20px;
+    position: relative;
+    bottom: 0;
+    
+}
+.redesSociales i {
+    margin: 8px;
+}
+
+#desplegablecillo {
+    color: #969696;
+    text-align: center;
+}
+
+/*BUSCADOR-------------*/
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #1D2C40;
+    border-radius: 30px;
+    padding: 10px;
+
+
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_input {
+    padding: 0 10px;
+    width: 200px;
+    caret-color: #733934;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_icon {
+    background: white;
+    color: #733934;
+}
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+/*FIN BUSCADOR---------*/
+/*PIE DE LA PAGINA-------------*/
+.pie{
+    background-color: #000000;
+    color: rgb(68, 68, 68);
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    
+    
+}
+
+
+.aa{
+    
+    height: 50px;
+}
+
+.bb{
+ 
+    height: 310px;
+}
+
+.bb p{
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.bb hr{
+    background-color: rgba(179, 179, 179, 0.712);
+}
+
+.texto1{
+    color: rgb(148, 148, 148);
+}
+
+/*----CONTENIDO1 RELLENO--------*/
+.contenido1Relleno{
+    margin: 40px;
+}
+
+.rowRelleno{
+    margin: 20px;
+}
+
+.rowRelleno div{
+    margin-top: 20px;
+}
+
+
+
+
+
+/*###################SEGUNDA PAGINA*#################*/
+
+.contenido{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;*/
+    text-align: center;
+    
+  
+}
+
+
+
+.tablita{
+    /*display: flex;
+    justify-content: center;*/
+    margin: 40px;
+    
+}
+
+.tablita table{
+    width: 900px;
+    height: 870px;
+    
+    text-align: center;
+}
+
+
+
+.tablita i{
+    color: rgb(22, 187, 22);
+}
+
+.tablita .no{
+    color: rgb(255, 0, 0);
+}
+
+.fotis{
+    background-color: rgba(128, 128, 128, 0.144);
+    padding: 30px;
+}
+
+
+
+.parrafoPie{
+    margin: 0;
+}
+
+/*#########################Tercera pagina###############*/
+.formularioCuerpo{
+    height: 500px;
+}
+
+.imagenFormulario{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.imagenFormulario img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+.formulario{
+    background-color: green;
+}

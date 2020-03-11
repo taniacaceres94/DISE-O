@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+     <!--JQUERY-->
+  <!--el código JQUERY siempre va dejabo de la librería.-->
+  <script src="jquery-3.4.1.min.js"></script>
+    <title>Document</title>
+
+    <style>
+         h1{
+            font-weight: 400;
+            font-size: 4em;
+            background-color: tomato;
+            padding: 300px 0 50px 100px;
+            margin-bottom: 150px;
+            color: white;
+        }
+
+        h2{
+            font-weight: 400;
+            font-size: 4em;
+            background-color: tomato;
+            padding: 300px 0 50px 100px;
+           
+            color: white;
+        }
+
+        p{
+            width: 30%;
+            margin: 0 auto 500px auto;
+            font-size: 1.4em;
+            color: #555;
+            font-weight: 300;
+        }
+    </style>
+    <script>
+        $(function(){
+
+           $(document).scroll(function(){
+                var posActualScroll = $(document).scrollTop();
+                $('#h1Principal').css('opacity',1-(posActualScroll) / 400);
+                var pos = posActualScroll / 400;
+                console.log(posActualScroll)
+                console.log("Pos actual / 400" + pos)
+             
+           })
+           $(document).scroll(function(){
+             
+                console.log(posActualScroll)
+                var posActualScroll = $(document).scrollTop();
+                $('#h1Botton').css('opacity',0 + (posActualScroll) / 800);
+           })
+        })
+    </script>
+
+</head>
+<body>
+    <h1 id="h1Principal">Título principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo sint officiis consectetur non voluptatum excepturi quo, omnis, nobis ex molestias, quas debitis commodi voluptatem doloribus sit eveniet odit dolore!</p>
+    <h2 id="h1Botton">Título principal</h2>
+</body>
+</html>

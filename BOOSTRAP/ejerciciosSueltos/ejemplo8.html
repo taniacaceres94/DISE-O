@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="C:\Users\tania\Desktop\CLASE\DISEÑO\2 EVALUACIÓN\bootstrap-4.4.1-dist/css/bootstrap.css">
+
+     <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <!--<script src="C:\Users\tania\Desktop\CLASE\DISEÑO\2 EVALUACIÓN\bootstrap-4.4.1-dist\js\boostrap.min.js" ></script>-->
+
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+    .masgrande{
+        width: 200px;
+    }
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>BOTONES</h1>
+        <button class="btn btn-primary">Boton1</button>
+        <button type="button" class="btn btn-outline-primary">Boton1</button>
+        <button class="btn btn-primary disable">Boton1</button>
+        <button class="btn btn-primary active">Boton1</button>
+
+        <h1>GRUPO DE BOTONES</h1>
+        <div class="btn-group"> <!--"btn-group-vertical"-->
+            <button type="button" class="btn btn-primary">Boton1</button>
+            <button type="button" class="btn btn-secondary">Boton2</button>
+            <button type="button" class="btn btn-info">Boton3</button>
+        </div>
+
+        <h1>GRUPOS DE BOTONES CON MENÚS DESPLEGABLES</h1>
+        <div class="btn-group"> <!--"btn-group-vertical"-->
+            <button type="button" class="btn btn-primary">Boton1</button>
+            <button type="button" class="btn btn-secondary">Boton2</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Boton3</button>
+                <div class="dropdown-menu masgrande">
+                    <a class="dropdown-item" href="#">Enlace 1</a>
+                    <a class="dropdown-item" href="#">Enlace 2</a>
+                </div>
+            </div>
+        </div>
+
+        <h1>Barras de progreso</h1>
+        <div class="progress">
+            <div class="progress-bar" style="width: 70%">70%</div>
+        </div>
+
+        <div class="progess">
+            <div class="progess-bar bg-success progress-bar-striped" style="width: 50%">50%</div>
+        </div>
+
+        <div class="progess">
+            <div class="progess-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 50%">50%</div>
+        </div>
+
+        <h1>TARJETA BÁSICA</h1>
+        <div class="card">
+            <div class="card-header">Cabecera</div>
+            <div class="card-body">Contenido</div>
+            <div class="card-footer">Pie</div>
+        </div>
+
+
+        <h1>TARJETA CON TÍTULO</h1>
+        <div class="card">
+            <div class="card-header">Cabecera</div>
+            <div class="card-body">
+                <h4 class="card-title">Título</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ducimus
+                     laboriosam id repudiandae, voluptatibus itaque provident laborum fuga modi at odit, eum ad. Repudiandae optio aliquid minus magni nobis quasi!</p>
+                <a class="card-link" href="#">Enlace</a>     
+            </div>
+            <div class="card-footer">Pie</div>
+        </div>
+
+        <h1>TARJETA CON IMAGEN</h1>
+        <div class="card">
+            <img class="card-img-top" src="https://picsum.photos/id/377/600/400">
+            <div class="card-body">
+                <h4 class="card-title">Título</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ducimus
+                     laboriosam id repudiandae, voluptatibus itaque provident laborum fuga modi at odit, eum ad. Repudiandae optio aliquid minus magni nobis quasi!</p>
+                <a class="card-link" href="#">Enlace</a>     
+            </div>
+            <div class="card-footer">Pie</div>
+        </div>
+
+        <h1>PLEGABLE</h1>
+        <button class="btn btn-secondary" data-toggle="collapse" data-target="#parrafito">Botón</button>
+        <p id="parrafito" class="collapse hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique maxime dolores vel? Laborum iusto, similique fuga provident animi aut dolorem assumenda molestias ullam maxime. Eaque consequatur repellat illo fuga unde?</p>
+    
+
+        <h1>ACORDEÓN</h1>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">Grupo1</a>
+                </div>
+                <div id="collapseOne" class="collapase show" data-parent="#accordion">
+                    <div class="card-body">Looorem ipsum.....</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseTwo">Grupo1</a>
+                </div>
+                <div id="collapseTwo" class="collapase hide" data-parent="#accordion">
+                    <div class="card-body">Looorem ipsum.....</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseThree">Grupo1</a>
+                </div>
+                <div id="collapseThree" class="collapase hide" data-parent="#accordion">
+                    <div class="card-body">Looorem ipsum.....</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
